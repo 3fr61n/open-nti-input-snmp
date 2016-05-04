@@ -90,14 +90,14 @@
 # Very Simple Example
 [[inputs.snmp]]
   [[inputs.snmp.host]]
-    address = "10.92.71.88:161"
+    address = "{{ SNMP_ADDR }}:{{ SNMP_PORT }}"
     # SNMP community
-    community = "public" # default public
+    community = "{{ SNMP_COMMUNITY }}" # default public
     # SNMP version (1, 2 or 3)
     # Version 3 not supported yet
     version = 2 # default 2
     # Simple list of OIDs to get, in addition to "collect"
-    get_oids = [".1.3.6.1.2.1.2.2.1.16.544"]
+    get_oids = ["{{ SNMP_OIDS }}"]
 
 ###############################################################################
 #                              SERVICE INPUTS                                 #

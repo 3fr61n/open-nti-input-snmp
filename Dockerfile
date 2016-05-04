@@ -62,6 +62,10 @@ ENV INFLUXDB_ADDR=localhost \
     INFLUXDB_PORT=8086 \
     KAFKA_ADDR=localhost \
     KAFKA_PORT=9092 \
-    KAFKA_TOPIC=snmp
+    KAFKA_TOPIC=snmp \
+    SNMP_ADDR=10.92.71.88 \
+    SNMP_PORT=161 \
+    SNMP_COMMUNITY=public \
+    SNMP_OIDS=.1.3.6.1.2.1.2.2.1.16.544 
 
 CMD ["/sbin/my_init"]
