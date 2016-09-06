@@ -27,7 +27,7 @@ RUN     apt-get -y update && \
 RUN     pip install envtpl
 
 # Latest version
-ENV TELEGRAF_VERSION 0.11.1-1
+ENV TELEGRAF_VERSION 1.0.0-rc1
 
 ########################
 ### Install telegraf ###
